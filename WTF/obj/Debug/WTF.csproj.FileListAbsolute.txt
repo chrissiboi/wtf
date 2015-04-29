@@ -1,0 +1,22 @@
+c:\users\pmiller.woco-dom\documents\visual studio 2013\Projects\WTF\WTF\bin\Debug\WTF.exe.config
+c:\users\pmiller.woco-dom\documents\visual studio 2013\Projects\WTF\WTF\obj\Debug\WTF.csprojResolveAssemblyReference.cache
+c:\users\pmiller.woco-dom\documents\visual studio 2013\Projects\WTF\WTF\obj\Debug\MainWindow.baml
+c:\users\pmiller.woco-dom\documents\visual studio 2013\Projects\WTF\WTF\obj\Debug\MainWindow.g.cs
+c:\users\pmiller.woco-dom\documents\visual studio 2013\Projects\WTF\WTF\obj\Debug\App.g.cs
+c:\users\pmiller.woco-dom\documents\visual studio 2013\Projects\WTF\WTF\obj\Debug\WTF_MarkupCompile.cache
+c:\users\pmiller.woco-dom\documents\visual studio 2013\Projects\WTF\WTF\obj\Debug\WTF.g.resources
+c:\users\pmiller.woco-dom\documents\visual studio 2013\Projects\WTF\WTF\obj\Debug\WTF.Properties.Resources.resources
+c:\users\pmiller.woco-dom\documents\visual studio 2013\Projects\WTF\WTF\obj\Debug\WTF.csproj.GenerateResource.Cache
+C:\Users\Stimpy\Documents\WTF\WTF\bin\Debug\WTF.exe.config
+C:\Users\Stimpy\Documents\WTF\WTF\obj\Debug\WTF.csprojResolveAssemblyReference.cache
+C:\Users\Stimpy\Documents\WTF\WTF\obj\Debug\MainWindow.baml
+C:\Users\Stimpy\Documents\WTF\WTF\obj\Debug\MainWindow.g.cs
+C:\Users\Stimpy\Documents\WTF\WTF\obj\Debug\App.g.cs
+C:\Users\Stimpy\Documents\WTF\WTF\obj\Debug\WTF_MarkupCompile.cache
+C:\Users\Stimpy\Documents\WTF\WTF\obj\Debug\WTF.g.resources
+C:\Users\Stimpy\Documents\WTF\WTF\obj\Debug\WTF.Properties.Resources.resources
+C:\Users\Stimpy\Documents\WTF\WTF\obj\Debug\WTF.csproj.GenerateResource.Cache
+C:\Users\Stimpy\Documents\WTF\WTF\bin\Debug\WTF.exe
+C:\Users\Stimpy\Documents\WTF\WTF\bin\Debug\WTF.pdb
+C:\Users\Stimpy\Documents\WTF\WTF\obj\Debug\WTF.exe
+C:\Users\Stimpy\Documents\WTF\WTF\obj\Debug\WTF.pdb

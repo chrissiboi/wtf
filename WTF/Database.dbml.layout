@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Database">
+  <DataContextMoniker Name="/DatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="797d90bc-0b63-4264-b2da-b73d7653171b" absoluteBounds="0.75, 2.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DatabaseDataContext/T_Einsätze" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8e03212-b27c-4ab9-9ddb-4c80fe7d5611" absoluteBounds="0.76500000000000012, 3.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="852011b3-0c68-4964-992a-8d054bcab4aa" absoluteBounds="5.625, 2.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DatabaseDataContext/T_EinsätzeFarzeugFlotte" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd52e3dc-276a-4885-916e-5b2a4805973d" absoluteBounds="5.6400000000000006, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.35984537760417); (6.625 : 4.35984537760417); (6.625 : 3.94399251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/T_Einsätze/T_Einsätze_T_EinsätzeFarzeugFlotte" />
+      <nodes>
+        <classShapeMoniker Id="797d90bc-0b63-4264-b2da-b73d7653171b" />
+        <classShapeMoniker Id="852011b3-0c68-4964-992a-8d054bcab4aa" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f91142d9-6b1e-40a5-a875-13b9aaedc1c9" absoluteBounds="8.125, 2.75, 2, 1.0016910807291668">
+      <DataClassMoniker Name="/DatabaseDataContext/T_FarzeugFlotte" />
+      <nestedChildShapes>
+        <elementListCompartment Id="09919006-1bdb-43cd-aab1-5cc88433f6b8" absoluteBounds="8.14, 3.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.125 : 3.25084554036458); (7.625 : 3.25084554036458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/T_FarzeugFlotte/T_FarzeugFlotte_T_EinsätzeFarzeugFlotte" />
+      <nodes>
+        <classShapeMoniker Id="f91142d9-6b1e-40a5-a875-13b9aaedc1c9" />
+        <classShapeMoniker Id="852011b3-0c68-4964-992a-8d054bcab4aa" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d5abda87-5f65-4bcc-8b06-0118101d76ab" absoluteBounds="3.25, 2.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DatabaseDataContext/T_Route" />
+      <nestedChildShapes>
+        <elementListCompartment Id="072b489c-4721-4c1c-a220-8229d5905ded" absoluteBounds="3.2649999999999997, 3.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.25 : 3.44314697265625); (2.75 : 3.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/T_Route/T_Route_T_Einsätze" />
+      <nodes>
+        <classShapeMoniker Id="d5abda87-5f65-4bcc-8b06-0118101d76ab" />
+        <classShapeMoniker Id="797d90bc-0b63-4264-b2da-b73d7653171b" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

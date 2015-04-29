@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Feuerwehr" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=XI-WST-PM\SQLEXPRESS;Initial Catalog=Feuerwehr;Integrated Security=True" SettingsObjectName="WTF.Properties.Settings" SettingsPropertyName="FeuerwehrConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_Einsätze" Member="T_Einsätze">
+    <Type Name="T_Einsätze">
+      <Column Name="P_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Datum" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Ergebnis" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Einsatzdauer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="f_Route_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="T_Einsätze_T_EinsätzeFarzeugFlotte" Member="T_EinsätzeFarzeugFlotte" ThisKey="P_ID" OtherKey="einsätze_ID" Type="T_EinsätzeFarzeugFlotte" />
+      <Association Name="T_Route_T_Einsätze" Member="T_Route" ThisKey="f_Route_ID" OtherKey="P_ID" Type="T_Route" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_EinsätzeFarzeugFlotte" Member="T_EinsätzeFarzeugFlotte">
+    <Type Name="T_EinsätzeFarzeugFlotte">
+      <Column Name="einsätze_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="farzeigflotte" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="T_Einsätze_T_EinsätzeFarzeugFlotte" Member="T_Einsätze" ThisKey="einsätze_ID" OtherKey="P_ID" Type="T_Einsätze" IsForeignKey="true" />
+      <Association Name="T_FarzeugFlotte_T_EinsätzeFarzeugFlotte" Member="T_FarzeugFlotte" ThisKey="farzeigflotte" OtherKey="farzeugnummer" Type="T_FarzeugFlotte" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_FarzeugFlotte" Member="T_FarzeugFlotte">
+    <Type Name="T_FarzeugFlotte">
+      <Column Name="farzeugnummer" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="T_FarzeugFlotte_T_EinsätzeFarzeugFlotte" Member="T_EinsätzeFarzeugFlotte" ThisKey="farzeugnummer" OtherKey="farzeigflotte" Type="T_EinsätzeFarzeugFlotte" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Route" Member="T_Route">
+    <Type Name="T_Route">
+      <Column Name="P_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="leange" Type="System.Decimal" DbType="Decimal(16,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fahrdauer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="T_Route_T_Einsätze" Member="T_Einsätze" ThisKey="P_ID" OtherKey="f_Route_ID" Type="T_Einsätze" />
+    </Type>
+  </Table>
+</Database>
